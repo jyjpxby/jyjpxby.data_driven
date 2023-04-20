@@ -1,5 +1,6 @@
 ## Energy analysis of nanozyme-catalyzed reactions.
 ## there are six copies of the code. Copy the following code into matlab.
+## And place the steer3d_A.txt,steer3d_B.txt,steer3d_O.txt,TDEBD_0_A.txt,TDEBD_1_A.txt,TDEBD_W.txt file in the same folder.
 
 ## matlab: TDEBD_0.m
 
