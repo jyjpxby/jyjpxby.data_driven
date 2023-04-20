@@ -1,4 +1,7 @@
 ## Mining of nanozyme-catalyzed reaction pathways
+## there are two copies of the code. Copy the following code into matlab.
+## And place the dij_0.txt,dij_00.txt,dij_1.txt,dij_2.txt,dij_3.txt,dij_11.txt,dij_22.txt,dij_sd.txt,jilu.txt file in the same folder.
+
 ## matlab_Difference_Matrix_xifu
 
 clearvars
