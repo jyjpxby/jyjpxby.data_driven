@@ -1,8 +1,9 @@
 ## Mining of nanozyme-catalyzed reaction pathways
 ## there are two copies of the code. Copy the following code into matlab.
-## And place the dij_0.txt,dij_00.txt,dij_1.txt,dij_2.txt,dij_3.txt,dij_11.txt,dij_22.txt,dij_sd.txt,jilu.txt file in the same folder.
+## And place the dij_0.txt,dij_00.txt,dij_1.txt,dij_2.txt,dij_3.txt,dij_11.txt,dij_22.txt,dij_sd.txt,jilu.txt file in the same folder,and create CuMnCo7O12 folder and CuMnCo7O12-1 folder under this folder.
+## Please run code Difference_Matrix_xifu.m and DIJKSTRA.m in order
 
-## matlab_Difference_Matrix_xifu
+## matlab: Difference_Matrix_xifu.m
 
 clearvars
 close all
@@ -58,7 +59,7 @@ fid = fopen('dij_3.txt','w');
 fprintf(fid,[repmat('%5.2f\t', 1, size(F1,2)), '\n'], F1');     
 fclose(fid);
 
-## matlab_DIJKSTRA
+## matlab: DIJKSTRA.m
 
 clearvars
 close all
@@ -247,3 +248,216 @@ while i2 <= HH
     end
 end
 toc
+
+## text: dij_00.txt
+
+2	2	2	8	8	8	14	14	14	1	7	13	1	7	13	1	7	13	2	2	2	8	8	8	14	14	14	3	9	15	3	9	15	3	9	15	6	6	6	12	12	12	18	18	18	2	8	14	2	8	14	2	8	14	2	2	2	8	8	8	14	14	14	4	10	16	4	10	16	4	10	16	6	6	6	12	12	12	18	18	18	3	9	15	3	9	15	3	9	15
+1	7	13	1	7	13	1	7	13	2	2	2	8	8	8	14	14	14	3	9	15	3	9	15	3	9	15	2	2	2	8	8	8	14	14	14	2	8	14	2	8	14	2	8	14	6	6	6	12	12	12	18	18	18	4	10	16	4	10	16	4	10	16	2	2	2	8	8	8	14	14	14	3	9	15	3	9	15	3	9	15	6	6	6	12	12	12	18	18	18
+
+## text: dij_0.txt
+
+start	dest	LineWidth	chemistry min	chemistry max	adsorb min	adsorb max
+15	18	1.5	-6	50	0	5
+
+## text: dij_1.txt
+
+-946.0317971
+-936.9733342
+-930.8621916
+-940.2242186
+-933.7072761
+-931.2574635
+-944.4057326
+-931.5985295
+-920.6512989
+-933.0088418
+-926.0336083
+-921.4675687
+-937.0392553
+-933.7940605
+-929.4484686
+-937.893747
+-933.0107404
+-929.4483271
+
+## text: dij_2.txt
+
+ 0.00	 9.06	  Inf	 5.81	12.32	  Inf	 1.63	  Inf	  Inf	  Inf	  Inf	  Inf	 8.99	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	 0.00	  Inf	  Inf	 3.27	  Inf	  Inf	 5.37	  Inf	  Inf	  Inf	  Inf	  Inf	 3.18	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	 0.00	  Inf	-2.85	-0.40	  Inf	  Inf	10.21	  Inf	  Inf	  Inf	  Inf	  Inf	 1.41	  Inf	  Inf	  Inf	
+  Inf	 3.25	  Inf	 0.00	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	-3.27	 2.85	  Inf	 0.00	 2.45	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	 0.40	  Inf	-2.45	 0.00	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+-1.63	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	12.81	  Inf	11.40	18.37	  Inf	 7.37	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	-5.37	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	  Inf	  Inf	 5.56	  Inf	  Inf	-2.20	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	  Inf	-5.38	-0.82	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 1.41	  Inf	 0.00	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	-5.56	 5.38	  Inf	 0.00	 4.57	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.82	  Inf	-4.57	 0.00	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	 3.25	  Inf	-0.85	 4.03	  Inf	
+  Inf	-3.18	  Inf	  Inf	  Inf	  Inf	  Inf	 2.20	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	  Inf	  Inf	 0.78	  Inf	
+  Inf	  Inf	-1.41	  Inf	  Inf	  Inf	  Inf	  Inf	 8.80	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	  Inf	-3.56	 0.00	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 4.10	  Inf	 0.00	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	-0.78	 3.56	-4.88	 0.00	 3.56	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	-0.00	  Inf	-3.56	 0.00	
+
+## text: dij_3.txt
+
+ 0.00	 9.06	  Inf	 5.81	12.32	  Inf	 1.69	  Inf	  Inf	  Inf	  Inf	  Inf	 8.99	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	 0.00	  Inf	  Inf	 3.27	  Inf	  Inf	 5.51	  Inf	  Inf	  Inf	  Inf	  Inf	 3.18	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	 0.00	  Inf	 2.85	 0.40	  Inf	  Inf	10.42	  Inf	  Inf	  Inf	  Inf	  Inf	 1.41	  Inf	  Inf	  Inf	
+  Inf	 3.25	  Inf	 0.00	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	 3.27	 2.85	  Inf	 0.00	 2.45	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	 0.40	  Inf	 2.45	 0.00	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+ 1.63	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	12.81	  Inf	11.40	18.37	  Inf	 7.37	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	 5.37	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	  Inf	  Inf	 5.56	  Inf	  Inf	 2.20	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	  Inf	 5.38	 0.82	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 1.41	  Inf	 0.00	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 5.56	 5.38	  Inf	 0.00	 4.57	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.82	  Inf	 4.57	 0.00	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+ 0.61	  Inf	  Inf	  Inf	  Inf	  Inf	 0.67	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	 3.25	  Inf	 0.85	 4.03	  Inf	
+  Inf	 2.05	  Inf	  Inf	  Inf	  Inf	  Inf	 3.46	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	  Inf	  Inf	 0.78	  Inf	
+  Inf	  Inf	 0.15	  Inf	  Inf	  Inf	  Inf	  Inf	10.27	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	  Inf	 3.56	 0.00	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 4.10	  Inf	 0.00	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.78	 3.56	 4.88	 0.00	 3.56	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.00	  Inf	 3.56	 0.00	
+
+## text: dij_11.txt
+
+-0.484317148
+-0.790247679
+-0.952807207
+-0.978159557
+-0.725981722
+-0.579627839
+-0.418238884
+-0.654518631
+-0.745649082
+-0.90442527
+-0.564965828
+-0.541785207
+-1.090070002
+-1.916916369
+-2.214923218
+-2.377356399
+-1.887263296
+-1.617184071
+
+## text: dij_22.txt
+
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.07	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.14	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	 0.21	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+ 0.61	  Inf	  Inf	  Inf	  Inf	  Inf	 0.67	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	 1.13	  Inf	  Inf	  Inf	  Inf	  Inf	 1.26	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	 1.26	  Inf	  Inf	  Inf	  Inf	  Inf	 1.47	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	  Inf	
+
+## text: dij_sd.txt
+
+1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	2	2	2	2	2	2	3	3	3	3	3	3	3	3	3	4	4	4	4	4	4	5	5	5	6	6	6	6	6	6	6	6	6	7	7	7	7	7	7	7	7	7	7	7	7	7	7	7	8	8	8	8	8	8	9	9	9	9	9	9	9	9	9	10	10	10	10	10	10	11	11	11	12	12	12	12	12	12	12	12	12	13	13	13	13	13	13	13	13	13	13	13	13	13	13	13	14	14	14	14	14	14	15	15	15	15	15	15	15	15	15	16	16	16	16	16	16	17	17	17	18	18	18	18	18	18	18	18	18	2	2	2	2	2	2	3	3	3	3	4	4	4	4	4	4	5	5	5	5	5	5	5	5	6	6	6	6	8	8	8	8	8	8	9	9	9	9	10	10	10	10	10	10	11	11	11	11	11	11	11	11	12	12	12	12	14	14	14	14	14	14	15	15	15	15	16	16	16	16	16	16	17	17	17	17	17	17	17	17	18	18	18	18	4	5	6	4	5	6	10	11	12	10	11	12	16	17	18	16	17	18
+2	3	4	5	6	8	9	10	11	12	14	15	16	17	18	3	6	9	12	15	18	1	2	4	7	8	10	13	14	16	2	3	8	9	14	15	4	10	16	1	2	4	7	8	10	13	14	16	2	3	4	5	6	8	9	10	11	12	14	15	16	17	18	3	6	9	12	15	18	1	2	4	7	8	10	13	14	16	2	3	8	9	14	15	4	10	16	1	2	4	7	8	10	13	14	16	2	3	4	5	6	8	9	10	11	12	14	15	16	17	18	3	6	9	12	15	18	1	2	4	7	8	10	13	14	16	2	3	8	9	14	15	4	10	16	1	2	4	7	8	10	13	14	16	7	10	11	13	16	17	11	12	17	18	7	11	12	13	17	18	7	8	9	12	13	14	15	18	9	11	15	17	1	4	5	13	16	17	5	6	17	18	1	5	6	13	17	18	1	2	3	6	13	14	15	18	3	5	15	17	1	4	5	7	10	11	5	6	11	12	1	5	6	7	11	12	1	2	3	6	7	8	9	12	3	5	9	11	10	11	12	16	17	18	4	5	6	16	17	18	4	5	6	10	11	12
+
+## text: jilu.txt
+
+   2.0000000e+00   1.0000000e+00   9.0600000e+00
+   2.0000000e+00   7.0000000e+00   1.0690000e+01
+   2.0000000e+00   1.3000000e+01   5.3000000e+00
+   8.0000000e+00   1.0000000e+00   1.4500000e+01
+   8.0000000e+00   7.0000000e+00   1.2810000e+01
+   8.0000000e+00   1.3000000e+01   6.7100000e+00
+   1.4000000e+01   1.0000000e+00   1.2240000e+01
+   1.4000000e+01   7.0000000e+00   1.0620000e+01
+   1.4000000e+01   1.3000000e+01   3.2500000e+00
+   2.0000000e+00   1.0000000e+00   9.0600000e+00
+   2.0000000e+00   7.0000000e+00   1.0690000e+01
+   2.0000000e+00   1.3000000e+01   5.3000000e+00
+   8.0000000e+00   1.0000000e+00   1.4500000e+01
+   8.0000000e+00   7.0000000e+00   1.2810000e+01
+   8.0000000e+00   1.3000000e+01   6.7100000e+00
+   1.4000000e+01   1.0000000e+00   1.2240000e+01
+   1.4000000e+01   7.0000000e+00   1.0620000e+01
+   1.4000000e+01   1.3000000e+01   3.2500000e+00
+   2.0000000e+00   3.0000000e+00   6.1200000e+00
+   2.0000000e+00   9.0000000e+00   1.5190000e+01
+   2.0000000e+00   1.5000000e+01   6.2700000e+00
+   8.0000000e+00   3.0000000e+00   9.2100000e+00
+   8.0000000e+00   9.0000000e+00   1.0940000e+01
+   8.0000000e+00   1.5000000e+01   7.8000000e+00
+   1.4000000e+01   3.0000000e+00   5.7500000e+00
+   1.4000000e+01   9.0000000e+00   1.3140000e+01
+   1.4000000e+01   1.5000000e+01   4.3400000e+00
+   3.0000000e+00   2.0000000e+00   6.1200000e+00
+   9.0000000e+00   2.0000000e+00   1.6450000e+01
+   1.5000000e+01   2.0000000e+00   7.5200000e+00
+   3.0000000e+00   8.0000000e+00   6.6900000e+00
+   9.0000000e+00   8.0000000e+00   1.0940000e+01
+   1.5000000e+01   8.0000000e+00   6.5400000e+00
+   3.0000000e+00   1.4000000e+01   4.4900000e+00
+   9.0000000e+00   1.4000000e+01   1.4400000e+01
+   1.5000000e+01   1.4000000e+01   4.3400000e+00
+   6.0000000e+00   2.0000000e+00   5.7200000e+00
+   6.0000000e+00   8.0000000e+00   7.0900000e+00
+   6.0000000e+00   1.4000000e+01   4.8900000e+00
+   1.2000000e+01   2.0000000e+00   1.5640000e+01
+   1.2000000e+01   8.0000000e+00   1.0130000e+01
+   1.2000000e+01   1.4000000e+01   1.3590000e+01
+   1.8000000e+01   2.0000000e+00   7.5200000e+00
+   1.8000000e+01   8.0000000e+00   6.5400000e+00
+   1.8000000e+01   1.4000000e+01   4.3400000e+00
+   2.0000000e+00   6.0000000e+00   5.7200000e+00
+   8.0000000e+00   6.0000000e+00   9.6100000e+00
+   1.4000000e+01   6.0000000e+00   6.1500000e+00
+   2.0000000e+00   1.2000000e+01   1.4380000e+01
+   8.0000000e+00   1.2000000e+01   1.0130000e+01
+   1.4000000e+01   1.2000000e+01   1.2330000e+01
+   2.0000000e+00   1.8000000e+01   6.2700000e+00
+   8.0000000e+00   1.8000000e+01   7.8000000e+00
+   1.4000000e+01   1.8000000e+01   4.3400000e+00
+   2.0000000e+00   4.0000000e+00   3.2500000e+00
+   2.0000000e+00   1.0000000e+01   5.6600000e+00
+   2.0000000e+00   1.6000000e+01   6.1500000e+00
+   8.0000000e+00   4.0000000e+00   8.7600000e+00
+   8.0000000e+00   1.0000000e+01   1.4100000e+00
+   8.0000000e+00   1.6000000e+01   7.5600000e+00
+   1.4000000e+01   4.0000000e+00   6.4300000e+00
+   1.4000000e+01   1.0000000e+01   3.6100000e+00
+   1.4000000e+01   1.6000000e+01   4.1000000e+00
+   0.0000000e+00   0.0000000e+00   0.0000000e+00
+   0.0000000e+00   0.0000000e+00   0.0000000e+00
+   1.6000000e+01   2.0000000e+00   8.8400000e+00
+   0.0000000e+00   0.0000000e+00   0.0000000e+00
+   0.0000000e+00   0.0000000e+00   0.0000000e+00
+   1.6000000e+01   8.0000000e+00   7.8600000e+00
+   0.0000000e+00   0.0000000e+00   0.0000000e+00
+   0.0000000e+00   0.0000000e+00   0.0000000e+00
+   1.6000000e+01   1.4000000e+01   5.6600000e+00
+   6.0000000e+00   3.0000000e+00   4.0000000e-01
+   6.0000000e+00   9.0000000e+00   1.8030000e+01
+   6.0000000e+00   1.5000000e+01   5.5000000e-01
+   1.2000000e+01   3.0000000e+00   1.1240000e+01
+   1.2000000e+01   9.0000000e+00   8.2000000e-01
+   1.2000000e+01   1.5000000e+01   1.1090000e+01
+   1.8000000e+01   3.0000000e+00   1.4100000e+00
+   1.8000000e+01   9.0000000e+00   1.7480000e+01
+   1.8000000e+01   1.5000000e+01   0.0000000e+00
+   3.0000000e+00   6.0000000e+00   4.0000000e-01
+   9.0000000e+00   6.0000000e+00   1.0820000e+01
+   1.5000000e+01   6.0000000e+00   1.8100000e+00
+   3.0000000e+00   1.2000000e+01   1.6820000e+01
+   9.0000000e+00   1.2000000e+01   8.2000000e-01
+   1.5000000e+01   1.2000000e+01   1.6670000e+01
+   3.0000000e+00   1.8000000e+01   1.5000000e-01
+   9.0000000e+00   1.8000000e+01   1.0270000e+01
+   1.5000000e+01   1.8000000e+01   0.0000000e+00
