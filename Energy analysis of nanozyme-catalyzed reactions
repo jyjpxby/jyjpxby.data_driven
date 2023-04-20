@@ -1,5 +1,5 @@
 ## Energy analysis of nanozyme-catalyzed reactions
-## matlab_TDEBD_0
+## matlab: TDEBD_0.m
 
 clearvars
 close all
@@ -28,7 +28,7 @@ figure,contourf(X,Y,Z,20)%Plot the contour lines
 % ['H2O2','H2O2','OOH','H2O','O2','H2O2','OH','O2','O2-','H2O2','OOH','H2O','O2-','H2O2','OOH','OH','O2','H2O2','OH','H2O','O2-']);
  hold off
  
- ## matlab_TDEBD_1
+ ## matlab: TDEBD_1.m
  
  clearvars
 close all
@@ -57,7 +57,7 @@ figure,contourf(X,Y,Z,20)%Plot the contour lines
 % ['H2O2','H2O2','OOH','H2O','O2','H2O2','OH','O2','O2-','H2O2','OOH','H2O','O2-','H2O2','OOH','OH','O2','H2O2','OH','H2O','O2-']);
  hold off
  
- ## matlab_RRTStar_3D
+ ## matlab: RRTStar_3D.m
   
   clearvars
 close all
@@ -231,7 +231,7 @@ while q_end.parent ~= 0
     q_end = nodes(start);
 end
 
- ## matlab_steer3d
+ ## matlab: steer3d.m
  
  function A = steer3d(qr, qn, val, eps)
 data1=importdata('steer3d_O.txt');
@@ -253,13 +253,13 @@ z_min = data2(1,3);
    A = [qnew(1), qnew(2), qnew(3)];
 end
 
-## matlab_dist_3d
+## matlab: dist_3d.m
 
 function d = dist_3d(q1,q2)
     d = sqrt((q1(1)-q2(1))^2 + (q1(2)-q2(2))^2 + (q1(3)-q2(3))^2);
 end
 
-## matlab_checkPath3
+## matlab: checkPath3.m
 
 %% checkPath3.m
 
