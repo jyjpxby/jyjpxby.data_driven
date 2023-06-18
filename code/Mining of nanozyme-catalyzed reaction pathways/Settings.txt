@@ -1,0 +1,2 @@
+LineWidth	chemistry min	chemistry max	adsorb min	adsorb max
+1.5	-6	50	0	5
