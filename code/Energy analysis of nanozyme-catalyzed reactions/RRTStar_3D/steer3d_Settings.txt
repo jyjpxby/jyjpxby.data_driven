@@ -1,2 +1,0 @@
-X_min	Y_min	Z_min	X_max	Y_max	Z_max	EPS	numNodes	X_start	Y_start	Z_start	X_goal	Y_goal	Z_goal
-80	180	-100	202	400	300	10	2000	200	198.7622486	100.7753924	102.5115325	333.7802991	13.59622965
